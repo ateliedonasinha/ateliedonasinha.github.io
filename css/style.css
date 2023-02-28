@@ -9,8 +9,8 @@
 
   /* You can change the background color by typing the color code. (If you do not enter a background-image image, the background-color will be active.) */
   --background_color: #000;
-  --background_image: url("../img/wallpaper.png");
-
+  --background_image: url("../bg.png");
+  
   /* You can change the frame thickness and color of the picture by typing the number of pixels and the color code. */
   --image_border_color: #1f232e;
   --image_border_px: 3px;
@@ -53,7 +53,11 @@ body {
   font: var(--font_size) var(--font_family);
   font-weight: 400;
   line-height: 1.5;
-  background: var(--background_color) var(--background_image) no-repeat center;
+  background: var(--background_color) var(--background_image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
